@@ -33,6 +33,7 @@
   --color-secondary: var(--secondary);
   --color-primary-foreground: var(--primary-foreground);
   --color-primary: var(--primary);
+  --color-clinic-primary: var(--clinic-primary);
   --color-popover-foreground: var(--popover-foreground);
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
@@ -44,6 +45,7 @@
 }
 
 :root {
+  --clinic-primary: #535edd;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -118,5 +120,8 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  .container {
+    @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
   }
 }
